@@ -1,0 +1,24 @@
+
+
+首先在搬瓦工上选择一款你你需要的服务器，根据自身应用
+
+然后付款成功后，邮箱会收到你购买的发票和服务器的登录密码，后面需要用到
+
+接着下载xshell进行远程连接服务，在https://kiwivm.64clouds.com/main.php可以查看你服务器的详细信息，包括ip地址，端口，登录账号root，密码为邮箱接受的
+
+登录成功执行以下操作：
+
+
+	yum -y install wget
+
+	wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+	
+	chmod +x shadowsocks-all.sh
+	
+	./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+		
+	接着选择导入的ss语言
+	
+	选择ssr服务的密码，端口，加密方式
+	
+	最后自身pc下载ssr软件，配置上述购买服务器的信息，就可以科学上网了
